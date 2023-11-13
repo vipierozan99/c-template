@@ -22,6 +22,11 @@ $(BUILD_DIR)/src/exec_1: $(OBJS) $(BUILD_DIR)/src/exec_1.c.o
 $(BUILD_DIR)/src/exec_2: $(OBJS) $(BUILD_DIR)/src/exec_2.c.o
 	$(CC) $(OBJS) $@.c.o -o $@ $(LDFLAGS)
 
+
+$(BUILD_DIR)/src/test_1: $(OBJS) $(BUILD_DIR)/src/test_1.c.o
+	$(CC) $(OBJS) $@.c.o -o $@ $(LDFLAGS)
+
+
 # c source
 $(BUILD_DIR)/%.c.o: %.c
 	$(MKDIR_P) $(dir $@)

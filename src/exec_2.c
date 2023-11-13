@@ -1,8 +1,4 @@
+#include <exec_2.h>
 #include <stdio.h>
-#include <lib_1.h>
 
-int main()
-{
-    printf("exec_2: %d", foo(2));
-    return 0;
-}
+int main(int argc, char *argv[]) { return exec_2_main(argc, argv); }
